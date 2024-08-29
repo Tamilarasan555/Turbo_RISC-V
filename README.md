@@ -3,7 +3,7 @@
 This project implements a basic RISC-V single-core processor.
 The processor is designed to execute instructions in a simplified RISC-V architecture, featuring instruction fetching, decoding, execution, memory access, and write-back stages.
 
-Features:
+#Features:
   32-bit data path
   ALU with arithmetic and logic operations
   Instruction fetching and decoding
@@ -11,10 +11,10 @@ Features:
   Support for immediate value extension
 
 
-Internal Architecture:
+#Internal Architecture:
   The processor is composed of several key components interconnected to perform the various tasks needed to execute instructions.
 
-Internal Wires:
+#Internal Wires:
   Program Counter (pctop): Holds the address of the current instruction.
   Instruction (rdtop):     The instruction fetched from memory.
   Registers (rd1top, rd2top): Data read from the register file.
@@ -27,7 +27,7 @@ Internal Wires:
   Control Signals: Various signals controlling the behavior of the processor.
 
 
-Components:
+#Components:
 1. Program Counter
     Manages the current instruction address and provides it to the instruction memory.
 2. Instruction Memory
